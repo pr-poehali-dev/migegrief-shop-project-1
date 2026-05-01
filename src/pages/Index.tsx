@@ -15,10 +15,24 @@ const cases = [
 ];
 
 const donates = [
-  { id: 1, name: "Старт", amount: "100 монет", price: "99₽", bonus: "", icon: "Zap", popular: false },
-  { id: 2, name: "Оптимум", amount: "500 монет", price: "399₽", bonus: "+50 бонус", icon: "Star", popular: true },
-  { id: 3, name: "Макс", amount: "1200 монет", price: "799₽", bonus: "+200 бонус", icon: "Crown", popular: false },
-  { id: 4, name: "VIP", amount: "3000 монет", price: "1799₽", bonus: "+700 бонус", icon: "Diamond", popular: false },
+  { id: 1,  name: "Hero",     price: "9₽",    icon: "Zap",     popular: false },
+  { id: 2,  name: "Titan",    price: "15₽",   icon: "Shield",  popular: false },
+  { id: 3,  name: "Avenger",  price: "25₽",   icon: "Sword",   popular: false },
+  { id: 4,  name: "Overlord", price: "30₽",   icon: "Star",    popular: false },
+  { id: 5,  name: "Magister", price: "45₽",   icon: "BookOpen",popular: false },
+  { id: 6,  name: "Imperator",price: "65₽",   icon: "Crown",   popular: false },
+  { id: 7,  name: "Dragon",   price: "99₽",   icon: "Flame",   popular: true  },
+  { id: 8,  name: "Tiger",    price: "175₽",  icon: "Zap",     popular: false },
+  { id: 9,  name: "Bunny",    price: "225₽",  icon: "Rabbit",  popular: false },
+  { id: 10, name: "Rabbit",   price: "325₽",  icon: "Heart",   popular: false },
+  { id: 11, name: "Vampire",  price: "500₽",  icon: "Moon",    popular: false },
+  { id: 12, name: "Hydra",    price: "700₽",  icon: "Layers",  popular: false },
+  { id: 13, name: "Cobra",    price: "925₽",  icon: "Zap",     popular: false },
+  { id: 14, name: "God",      price: "999₽",  icon: "Sparkles",popular: false },
+  { id: 15, name: "Pegas",    price: "800₽",  icon: "Wind",    popular: false },
+  { id: 16, name: "D.Helper", price: "1310₽", icon: "Wrench",  popular: false },
+  { id: 17, name: "Winner",   price: "1700₽", icon: "Trophy",  popular: false },
+  { id: 18, name: "Sponsor",  price: "1700₽", icon: "Diamond", popular: false },
 ];
 
 const currencies = [
@@ -195,7 +209,7 @@ export default function Index() {
               </div>
               <div className="glow-card rounded-xl px-5 py-3 flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                <div className="text-sm font-rajdhani font-bold text-green-400">Онлайн сейчас: 1,248 игроков</div>
+                <div className="text-sm font-rajdhani font-bold text-green-400">Онлайн сейчас: 3-6 игроков</div>
               </div>
             </div>
           </div>
@@ -288,25 +302,21 @@ export default function Index() {
             <p className="text-muted-foreground max-w-xl mx-auto">Мгновенное зачисление. Безопасная оплата через ЮKassa и другие системы.</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 section-reveal">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 section-reveal">
             {donates.map((d) => (
-              <div key={d.id} className={`relative glow-card rounded-2xl p-6 cursor-pointer ${d.popular ? "border-primary/60" : ""}`}>
+              <div key={d.id} className={`relative glow-card rounded-2xl p-4 cursor-pointer ${d.popular ? "border-primary/60" : ""}`}>
                 {d.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs px-3 py-1 rounded-full font-rajdhani font-bold whitespace-nowrap">
-                    ПОПУЛЯРНЫЙ
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs px-2 py-0.5 rounded-full font-rajdhani font-bold whitespace-nowrap">
+                    ХИТ
                   </div>
                 )}
                 <div className="text-center">
-                  <div className="w-12 h-12 rounded-xl bg-primary/20 border border-primary/30 flex items-center justify-center mx-auto mb-4">
-                    <Icon name={d.icon as "Zap"} size={22} className="text-primary" />
+                  <div className="w-10 h-10 rounded-xl bg-primary/20 border border-primary/30 flex items-center justify-center mx-auto mb-3">
+                    <Icon name={d.icon as "Zap"} size={18} className="text-primary" />
                   </div>
-                  <h3 className="font-rajdhani font-bold text-xl mb-1">{d.name}</h3>
-                  <div className="text-2xl font-rajdhani font-bold neon-text-cyan mb-1">{d.amount}</div>
-                  <div className="h-5 mb-3">
-                    {d.bonus && <div className="text-xs text-green-400">{d.bonus}</div>}
-                  </div>
-                  <div className="text-3xl font-rajdhani font-bold mb-4" style={{ color: "var(--neon-gold)" }}>{d.price}</div>
-                  <button className="w-full btn-gradient py-2.5 rounded-xl text-sm">
+                  <h3 className="font-rajdhani font-bold text-base mb-2 leading-tight">{d.name}</h3>
+                  <div className="text-xl font-rajdhani font-bold mb-3" style={{ color: "var(--neon-gold)" }}>{d.price}</div>
+                  <button className="w-full btn-gradient py-2 rounded-lg text-xs">
                     <span>Купить</span>
                   </button>
                 </div>
