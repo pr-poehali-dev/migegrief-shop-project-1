@@ -6,10 +6,10 @@ const CASE_IMAGE = "https://cdn.poehali.dev/projects/95c479d9-e6b9-4e9c-ab0b-233
 const DONATE_IMAGE = "https://cdn.poehali.dev/projects/95c479d9-e6b9-4e9c-ab0b-233b9e341489/files/0b62314a-1866-4dae-b102-ef141f56bc89.jpg";
 
 const cases = [
-  { id: 1, name: "Кейс «Элита»", price: "249₽", chance: "Редкий: 15%", color: "from-purple-600 to-blue-600" },
-  { id: 2, name: "Кейс «Легенда»", price: "499₽", chance: "Редкий: 25%", color: "from-pink-600 to-purple-600" },
-  { id: 3, name: "Кейс «Призрак»", price: "149₽", chance: "Редкий: 8%", color: "from-cyan-600 to-blue-600" },
-  { id: 4, name: "Кейс «Абсолют»", price: "999₽", chance: "Редкий: 40%", color: "from-yellow-500 to-pink-600" },
+  { id: 1, name: "Кейс с Реликами", price: "249₽", chance: "Редкий: 15%", color: "from-purple-600 to-blue-600" },
+  { id: 2, name: "Кейс с Реликами", price: "499₽", chance: "Редкий: 25%", color: "from-pink-600 to-purple-600" },
+  { id: 3, name: "Кейс с Валютой", price: "149₽", chance: "Редкий: 8%", color: "from-cyan-600 to-blue-600" },
+  { id: 4, name: "Кейс с Валютой", price: "999₽", chance: "Редкий: 40%", color: "from-yellow-500 to-pink-600" },
 ];
 
 const donates = [
