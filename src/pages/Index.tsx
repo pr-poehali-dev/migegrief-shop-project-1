@@ -7,9 +7,11 @@ const DONATE_IMAGE = "https://cdn.poehali.dev/projects/95c479d9-e6b9-4e9c-ab0b-2
 
 const cases = [
   { id: 1, name: "Кейс с Реликами", price: "249₽", chance: "Редкий: 15%", color: "from-purple-600 to-blue-600" },
-  { id: 2, name: "Кейс с Реликами", price: "499₽", chance: "Редкий: 25%", color: "from-pink-600 to-purple-600" },
-  { id: 3, name: "Кейс с Валютой", price: "149₽", chance: "Редкий: 8%", color: "from-cyan-600 to-blue-600" },
-  { id: 4, name: "Кейс с Валютой", price: "999₽", chance: "Редкий: 40%", color: "from-yellow-500 to-pink-600" },
+  { id: 2, name: "Кейс с Валютой", price: "149₽", chance: "Редкий: 8%", color: "from-cyan-600 to-blue-600" },
+  { id: 3, name: "Легендарный Кейс", price: "999₽", chance: "Редкий: 40%", color: "from-yellow-500 to-pink-600" },
+  { id: 4, name: "Кейс с Китами", price: "699₽", chance: "Редкий: 20%", color: "from-blue-600 to-cyan-500" },
+  { id: 5, name: "Кейс Домера", price: "349₽", chance: "Редкий: 12%", color: "from-green-600 to-teal-600" },
+  { id: 6, name: "Кейс с Донат Вещами", price: "499₽", chance: "Редкий: 18%", color: "from-pink-600 to-purple-600" },
 ];
 
 const donates = [
