@@ -74,6 +74,12 @@ export default function Index() {
   };
 
   const coins = parseFloat(rubAmount) > 0 ? (parseFloat(rubAmount) * 10).toLocaleString() : "0";
+  const [copied, setCopied] = useState(false);
+  const copyIP = () => {
+    navigator.clipboard.writeText("188.127.241.27:30045");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <div className="min-h-screen bg-background noise">
@@ -179,6 +185,13 @@ export default function Index() {
                 <div className="text-xs text-muted-foreground mb-1 uppercase tracking-widest">Сервер</div>
                 <div className="text-2xl font-rajdhani font-bold neon-text-cyan">MigeGrief</div>
                 <div className="text-lg font-rajdhani text-foreground mt-1">188.127.241.27:30045</div>
+                <button
+                  onClick={copyIP}
+                  className="mt-4 flex items-center gap-2 mx-auto btn-outline-neon px-4 py-2 rounded-lg text-sm transition-all"
+                >
+                  <Icon name={copied ? "Check" : "Copy"} size={14} />
+                  <span>{copied ? "Скопировано!" : "Скопировать IP"}</span>
+                </button>
               </div>
               <div className="glow-card rounded-xl px-5 py-3 flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
