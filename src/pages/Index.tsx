@@ -298,7 +298,7 @@ export default function Index() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="section-reveal text-center mb-16" data-section="Донат">
             <div className="inline-block px-3 py-1 rounded-full border border-pink-500/30 text-pink-400 text-xs mb-4">ДОНАТ</div>
-            <h2 className="text-4xl md:text-5xl font-rajdhani gradient-text mb-4">Пополни баланс</h2>
+            <h2 className="text-4xl md:text-5xl font-rajdhani gradient-text mb-4">Донат</h2>
             <p className="text-muted-foreground max-w-xl mx-auto">Мгновенное зачисление. Безопасная оплата через ЮKassa и другие системы.</p>
           </div>
 
