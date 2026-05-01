@@ -174,16 +174,15 @@ export default function Index() {
           </div>
 
           <div className="relative flex justify-center animate-float">
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-              <div className="absolute inset-0 rounded-2xl animate-pulse-glow" style={{ background: "linear-gradient(135deg, rgba(155,89,255,0.3), rgba(0,229,255,0.3))" }} />
-              <img src={HERO_IMAGE} alt="MigeGrief Shop" className="w-full h-full object-cover rounded-2xl relative z-10 opacity-90" />
-              <div className="absolute -top-4 -right-4 bg-card border border-primary/30 rounded-xl px-3 py-2 z-20 backdrop-blur-sm">
-                <div className="text-xs text-muted-foreground">Последний выигрыш</div>
-                <div className="text-sm font-rajdhani font-bold neon-text-cyan">AK-47 | Красный луч</div>
+            <div className="relative flex flex-col items-center justify-center gap-6">
+              <div className="glow-card rounded-2xl px-8 py-6 text-center neon-border-purple">
+                <div className="text-xs text-muted-foreground mb-1 uppercase tracking-widest">Сервер</div>
+                <div className="text-2xl font-rajdhani font-bold neon-text-cyan">MigeGrief</div>
+                <div className="text-lg font-rajdhani text-foreground mt-1">188.127.241.27:30045</div>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-card border border-primary/30 rounded-xl px-3 py-2 z-20 backdrop-blur-sm">
-                <div className="text-xs text-muted-foreground">Онлайн сейчас</div>
-                <div className="text-sm font-rajdhani font-bold text-green-400">1,248 игроков</div>
+              <div className="glow-card rounded-xl px-5 py-3 flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                <div className="text-sm font-rajdhani font-bold text-green-400">Онлайн сейчас: 1,248 игроков</div>
               </div>
             </div>
           </div>
